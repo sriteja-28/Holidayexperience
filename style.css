@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-section1,
+.main-section2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  animation: change 20s infinite ease-in-out;
+}
+
+
+@keyframes change {
+  0% {
+    background-image: url(./images/background2.webp);
+  }
+
+  20% {
+    background-image: url(./images/background11.jpg);
+  }
+
+  40% {
+    background-image: url(./images/background12.webp);
+  }
+
+  60% {
+    background-image: url(./images/background13.jpg);
+  }
+
+  80% {
+    background-image: url(./images/background14.jpg);
+  }
+
+  100% {
+    background-image: url(./images/background15.jpg);
+  }
+}
+
+
+nav {
+  background-color: silver !important;
+  padding: 10px 0;
+}
+
+
+.overlay {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.search-bar {
+  background-color: aliceblue;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  border-radius: 50px;
+  padding: 10px;
+}
+
+.btn-2 {
+  border-radius: 50px;
+}
+
+
+.txt-1 {
+  color: red;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Segoe Script", cursive;
+}
+
+.txt-2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Broadway", sans-serif;
+}
+
+.display-4 {
+  font-weight: bold;
+  font-family: "Algerian", sans-serif;
+  background-image: url(./images/masking.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.card {
+  width: 100%;
+  height: 350px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card img,
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 157px;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover img {
+  transform: scale(1.2);
+}
+
+
+footer {
+  text-align: center;
+  background-color: silver;
+  padding: 20px;
+}
+
+footer img {
+  width: 40px;
+  margin: 5px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #4b4141;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-indicators {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-indicators button {
+  background-color: aqua;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+
+.last-section {
+  background-color: silver;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.last-section a {
+  color: black !important;
+  text-decoration: none;
+}
+
+.last-section a:hover {
+  text-decoration: underline !important;
+}
+
+
+@media (max-width: 768px) {
+
+  .main-section1,
+  .main-section2 {
+    height: 70vh;
+  }
+
+  .txt-2 {
+    font-size: 24px;
+  }
+
+  .display-4 {
+    font-size: 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-container {
+    width: 120px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .main-section1,
+  .main-section2 {
+    height: 60vh;
+  }
+
+  .txt-2 {
+    font-size: 20px;
+  }
+
+  .display-4 {
+    font-size: 18px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100px;
+    height: 110px;
+  }
+}
+
+
+.c-link .card {
+  height: 350px;
+}
+
+#testimonialCarousel .card {
+  height: 300px;
+}
+
+#testimonialCarousel .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.blog-section .card {
+  height: auto !important;
+  margin-bottom: 20px;
+}
+
+.blog-section .card img,
+.blog-section .card-img-top {
+  height: auto !important;
+  max-height: 250px;
+  object-fit: cover;
+}
