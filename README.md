@@ -63,6 +63,7 @@ Click city cards to open Google Maps.
 Navigate through rooms and testimonials using carousel arrows.
 
 Explore the blog and Instagram sections for travel content.
+```
 
 License
 This project is for educational purposes and personal use.
