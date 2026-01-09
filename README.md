@@ -24,27 +24,22 @@ A responsive travel and vacation booking website built with HTML, CSS, and Boots
 ## Installation
 
 1. Clone the repository:
-```
-   git clone <repository-url>
-```
+git clone <repository-url>
 Open index.html in a browser.
 
 Ensure images/, style.css, and script.js are in the same directory.
 
 Technologies Used
+---------------------
 HTML5
-
 CSS3
-
 Bootstrap 5
-
 JavaScript
-
 Google Maps integration for city links
 
 File Structure
-arduino
-Copy code
+-------------------
+HolidayExperience
 ├── index.html
 ├── signup.html
 ├── signin.html
@@ -55,15 +50,14 @@ Copy code
 │   ├── room1.jpg
 │   └── ...
 └── README.md
+
 Usage
+------------
 Use the search bar to filter rentals by name, location, or category.
-
 Click city cards to open Google Maps.
-
 Navigate through rooms and testimonials using carousel arrows.
-
 Explore the blog and Instagram sections for travel content.
-```
 
 License
+-----------
 This project is for educational purposes and personal use.
