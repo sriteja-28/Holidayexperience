@@ -26,6 +26,7 @@ A responsive travel and vacation booking website built with HTML, CSS, and Boots
 1. Clone the repository:
 ```
    git clone <repository-url>
+```
 Open index.html in a browser.
 
 Ensure images/, style.css, and script.js are in the same directory.
